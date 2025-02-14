@@ -3,3 +3,6 @@ build/
 CMakeLists.txt.user*
 .vs/
 out/
+sql.txt
+function.md
+
