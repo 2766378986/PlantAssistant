@@ -1,0 +1,124 @@
+QLineEdit#searchLineEdit {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+QLineEdit#searchLineEdit:focus {
+    border-color: #4CAF50;
+}
+
+QComboBox#filterComboBox {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+    outline: none;
+}
+    
+QComboBox#filterComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #ccc;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#filterComboBox::down-arrow {
+    image: url(./res/icons/arrow-down.png);
+    width: 10px;
+    height: 10px;
+}
+
+#filterComboBox::down-arrow:on {
+    image: url(./res/icons/arrow-up.png);
+    width: 10px;
+    height: 10px;
+}
+
+
+
+QComboBox#filterComboBox QAbstractItemView {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    selection-background-color: #4CAF50;
+    selection-color: white;
+}
+
+QComboBox#filterComboBox QAbstractItemView::item {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+QComboBox#filterComboBox QAbstractItemView::item:selected {
+    background-color: #4CAF50;
+    color: white;
+    outline: none; /* 移除选中项的虚线框 */
+}
+
+#batchWaterButton, 
+#batchFertilizeButton, 
+#batchPruneButton,
+#addButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#batchWaterButton:hover, 
+#batchFertilizeButton:hover, 
+#batchPruneButton:hover,
+#addButton:hover {
+    background-color: #45a049;
+}
+
+#batchWaterButton:pressed, 
+#batchFertilizeButton:pressed, 
+#batchPruneButton:pressed,
+#addButton:pressed {
+    background-color: #3d8b40;
+}
+
+#confirmButton,
+#refreshButton  {
+        background-color: #2196F3;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        padding: 8px 16px;
+        font-size: 14px;
+}
+
+#confirmButton:hover,
+#refreshButton:hover {
+    background-color: #1e88e5;
+}
+
+#confirmButton:pressed,
+#refreshButton:pressed {
+    background-color: #1976D2;
+}
+
+
+
+#leftButton, #rightButton {
+    background-color: transparent;
+    border: none;
+}
+
+#leftButton:hover, #rightButton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#leftButton:pressed, #rightButton:pressed {
+    background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,88 @@
+QMainWindow {
+    background-color: white;
+}
+
+#stackedWidgetLoginRegistry {
+    border-radius: 15px;
+}
+
+QLineEdit#lineEditRegistryUsername,
+QLineEdit#lineEditRegistryPassword,
+QLineEdit#lineEditRegistryConfirmPassword,
+QLineEdit#lineEditUsername,
+QLineEdit#lineEditPassword {
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 2px solid #E8E8E8;
+    background-color: #E8E8E8;
+    font-size: 20px;
+    min-height: 15px;
+    min-width: 250px;
+    transition: all 0.3s ease-in-out;
+}
+
+QLineEdit#lineEditRegistryUsername:hover,
+QLineEdit#lineEditRegistryPassword:hover,
+QLineEdit#lineEditRegistryConfirmPassword:hover,
+QLineEdit#lineEditUsername:hover,
+QLineEdit#lineEditPassword:hover {
+    background-color: #F5F5F5;
+    border: 2px solid #BDBDBD;
+}
+
+QLineEdit#lineEditRegistryUsername:focus,
+QLineEdit#lineEditRegistryPassword:focus,
+QLineEdit#lineEditRegistryConfirmPassword:focus,
+QLineEdit#lineEditUsername:focus,
+QLineEdit#lineEditPassword:focus {
+    background-color: #FFFFFF;
+    border: 2px solid black;
+}
+
+/* 按钮 - 登录按钮 -注册按钮*/
+QPushButton#buttonRegistryConfirm,
+QPushButton#buttonLogin {
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #D5D5D5;
+    font-size: 20px;
+    min-height: 20px;
+    min-width: 250px;
+    color: #626262;
+}
+
+QPushButton#buttonRegistryConfirm:hover,
+QPushButton#buttonLogin:hover {
+    color: white;
+    background-color: black;
+}
+
+/* 前往注册按钮 - 返回登录按钮 */
+QPushButton#buttonRegistryGoBack {
+    border: none;
+    background-color: none;
+    font-size: 30px;
+    min-height: 40px;
+    text-align: left;
+    color: black;
+}
+
+QPushButton#buttonRegistry {
+    border: none;
+    background-color: none;
+    font-size: 12px;
+    min-height: 20px;
+    color: #A5A5A5;
+}
+
+QPushButton#buttonRegistryGoBack:hover,
+QPushButton#buttonRegistry:hover {
+    color: #5C85D6;
+    text-decoration: underline;
+}
+
+QPushButton#buttonRegistryGoBack:pressed,
+QPushButton#buttonRegistry:pressed {
+    color: #3A5BA0;
+}

@@ -1,0 +1,61 @@
+ QDialog {
+    background: #F5F7FA;
+    border-radius: 12px;
+}
+
+        /* 卡片管理器容器 */
+QScrollArea {
+    background: transparent;
+    border: none;
+}
+
+/* 时间选择 */
+QDateTimeEdit {
+    background: white;
+    border: 1px solid #DCDFE6;
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 200px;
+}
+
+QDateTimeEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 24px;
+    border-left: 1px solid #DCDFE6;
+}
+
+/* 按钮 */
+QDialogButtonBox {
+    margin-top: 20px;
+}
+
+QPushButton {
+    background: #409EFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background: #66B1FF;
+}
+
+QPushButton:pressed {
+    background: #3375B9;
+}
+
+QPushButton:disabled {
+    background: #C0C4CC;
+}
+
+        /* 标题 */
+QLabel#title {
+    font-size: 18px;
+    color: #303133;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+

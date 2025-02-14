@@ -1,0 +1,17 @@
+#popupDialog {
+    background: transparent;
+}
+
+#cardWidget {
+    /* background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, 
+              stop: 0 rgba(246, 247, 250, 180), 
+              stop: 1 rgba(233, 236, 239, 180)); */
+    background: rgba(255, 255, 255, 180);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+
+}
+
+QLabel {
+    background: transparent;
+}

@@ -1,0 +1,68 @@
+#plantAssistant {
+    /* background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #f0f0f0, stop:1 #ffffff); */
+    background-color: white;
+}
+
+#navigationList {
+    /* background-color: #f0f0f0; */
+    background-color: white;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+#navigationList::item {
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+
+}
+
+
+#navigationList::item:hover {
+    background-color: #e0e0e0;
+    border-radius: 30px;
+}
+
+
+#navigationList::item:selected {
+    background-color: #4CAF50;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+}
+
+
+QWidget#userWidget {
+    /* background-color: #f0f0f0; */
+    /* border: 1px solid #ccc; */
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+QLabel#nameLabel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+QLabel#infoLabel {
+    font-size: 12px;
+    color: #666;
+}
+
+QStackedWidget#contentStack {
+    /* background-color: #ffffff;
+     */
+    background-color: white;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    padding: 15px;
+}

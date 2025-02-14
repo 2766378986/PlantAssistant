@@ -1,0 +1,46 @@
+#plantCard {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #f6f7fa, stop:1 #e9ecef);
+    /* background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, 
+              stop: 0 rgba(246, 247, 250, 180), 
+              stop: 1 rgba(233, 236, 239, 180)); */
+
+
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+}
+
+
+#plantCard[selected="true"] {
+    border: 2px solid blue; /* 选中状态 */
+}
+
+QLabel {
+    color: #333;
+    font-size: 14px;
+}
+QLabel#plantName {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+
+QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+
+    font-size: 14px;
+}
+
+QPushButton:hover {
+     background-color: #45a049;
+}
+
+QPushButton:pressed {
+    background-color: #3d8b40;
+}

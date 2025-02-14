@@ -1,0 +1,151 @@
+/* 搜索框样式 */
+#searchLineEdit {
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+#searchLineEdit:hover {
+    border-color: #4A90E2;
+}
+
+/* 筛选框样式 */
+#filterComboBox {
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+#filterComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #ccc;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#filterComboBox:hover {
+    border-color: #4A90E2;
+}
+
+#filterComboBox::down-arrow {
+    image: url(./res/icons/arrow-down.png);
+    width: 10px;
+    height: 10px;
+}
+
+#filterComboBox::down-arrow:on {
+    image: url(./res/icons/arrow-up.png);
+    width: 10px;
+    height: 10px;
+}
+
+
+
+
+/* 添加按钮样式 */
+#addButton {
+    background-color: #4A90E2;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+#addButton:hover {
+    background-color: #357ABD;
+}
+
+#taskListWidget {
+    margin-bottom: 20px;
+}
+
+
+/* 底部区域标签样式 */
+#finishedLabel, #unfinishedLabel {
+    color: #333333; /* 深灰色文字 */
+}
+
+#finishedCountLabel {
+    color: #4A90E2; /* 蓝色文字 */
+}
+
+#unfinishedCountLabel {
+    color: #E74C3C; /* 红色文字 */
+}
+
+/* 批量操作按钮样式 */
+#batchFinishedButton {
+    background-color: #4A90E2; /* 蓝色背景 */
+    color: white; /* 白色文字 */
+    border-radius: 5px; /* 圆角 */
+    padding: 8px 12px; /* 内边距 */
+    font-size: 14px; /* 字体大小 */
+    border: none; /* 去掉边框 */
+}
+
+#batchFinishedButton:hover {
+    background-color: #357ABD; /* 悬停时深蓝色背景 */
+}
+
+#batchDeleteButton {
+    background-color: #E74C3C; /* 红色背景 */
+    color: white; /* 白色文字 */
+    border-radius: 5px; /* 圆角 */
+    padding: 8px 12px; /* 内边距 */
+    font-size: 14px; /* 字体大小 */
+    border: none; /* 去掉边框 */
+}
+
+#batchDeleteButton:hover {
+    background-color: #C0392B; /* 悬停时深红色背景 */
+}
+
+#scrollArea {
+    border: none; /* 去掉边框 */
+    background-color: white; /* 透明背景 */
+}
+
+/* 垂直滚动条样式 */
+#scrollArea:vertical {
+    width: 10px; /* 滚动条宽度 */
+    background-color: #F0F0F0; /* 滚动条背景颜色 */
+    border-radius: 5px; /* 圆角 */
+}
+
+
+#scrollArea:vertical {
+    background-color: #CCCCCC; /* 滚动条滑块颜色 */
+    border-radius: 5px; /* 圆角 */
+}
+
+
+#scrollArea:add-line:vertical, #scrollArea:sub-line:vertical {
+    background: none; /* 去掉上下箭头 */
+}
+
+#batchOperationConfirmButton {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+#batchOperationConfirmButton:hover {
+    background: #67C23A;
+    color: white;
+}
+
+
+#batchOperationConfirmButton:pressed {
+    background: #5DAF34;
+}
+
+

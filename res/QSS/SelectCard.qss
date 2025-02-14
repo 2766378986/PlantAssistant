@@ -1,0 +1,41 @@
+/* 卡片基础样式 */
+SelectCard {
+    background: white;
+    border: 2px solid #E4E7ED;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 5px;
+    transition: all 0.2s ease;
+}
+
+/* 悬停效果 */
+SelectCard:hover {
+    border-color: #409EFF;
+    transform: translateY(-2px);
+}
+
+/* 选中状态 */
+SelectCard[selected="true"] {
+    border-color: #409EFF;
+    background: #409EFF;
+    color: white;
+}
+
+/* 图片样式 */
+#SelectCardImage {
+    qproperty-alignment: AlignCenter;
+}
+
+/* 文字样式 */
+#SelectCardMessage {
+    qproperty-alignment: AlignCenter;
+    font-size: 14px;
+    font-weight: 500;
+    color: #303133;
+    margin-top: 8px;
+}
+
+/* 选中状态下的文字颜色 */
+SelectCard[selected="true"] #SelectCardMessage {
+    color: white;
+}

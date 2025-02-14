@@ -1,0 +1,75 @@
+/* TaskWidget 整体样式 */
+#taskWidget {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #c1dfc4, stop:1 #deecdd); */
+
+    border-radius: 10px; /* 圆角 */
+    padding: 10px; /* 内边距 */
+    margin: 5px 0; /* 外边距 */
+    border: 1px solid #E0E0E0; /* 浅灰色边框 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
+}
+
+#taskWidget[selected="true"] {
+    background-color: #BBDEFB;
+}
+
+#taskWidget[completed="true"][selected="false"] {
+    background-color: #E8F5E9;
+}
+
+#taskWidget[ending="true"][completed="false"][selected="false"] {
+    background-color: #FFEBEE;
+}
+
+/* 悬停效果 */
+#taskWidget:hover[selected="false"] {
+    background-color: rgba(245, 245, 245, 0.95);
+    border-color: #BBDEFB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* 标签样式 */
+QLabel {
+    font-family: "Segoe UI", sans-serif; /* 现代字体 */
+    font-size: 14px; /* 字体大小 */
+    color: #333333; /* 深灰色文字 */
+    padding: 5px; /* 内边距 */
+    background-color: transparent;
+}
+/* 完成按钮样式 */
+#completeButton {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#completeButton:hover {
+    background: #67C23A;
+    color: white;
+}
+
+#completeButton:pressed {
+    background: #5DAF34;
+}
+
+/* 删除按钮样式 */
+#deleteButton {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#deleteButton:hover {
+    background: #F56C6C;
+    color: white;
+}
+
+#deleteButton:pressed {
+    background: #E64C4C;
+}
+
